@@ -12,15 +12,15 @@ def get_farmpos(screenImage: Image):
     norm_path = 'core/templates/normal_land.png' if __name__ != '__main__' else 'templates/normal_land.png'
     gold_templ: np.ndarray = cv2.imread(gold_path)
     norm_templ: np.ndarray = cv2.imread(norm_path)
-    cv2.cvtColor(gold_templ, gold_templ, cv2.COLOR_BGR2GRAY)
-    cv2.cvtColor(norm_templ, norm_templ, cv2.COLOR_BGR2GRAY)
+    gold_templ = cv2.cvtColor(gold_templ, cv2.COLOR_BGR2GRAY)
+    norm_templ = cv2.cvtColor(norm_templ, cv2.COLOR_BGR2GRAY)
 
     # 2. 템플릿매칭
     gold_result: np.ndarray = cv2.matchTemplate(screen, gold_templ, cv2.TM_CCOEFF_NORMED)
     norm_result: np.ndarray = cv2.matchTemplate(screen, norm_templ, cv2.TM_CCOEFF_NORMED)
 
     # 3. threshold 적용
-    threshold = 0.98
+    threshold = 0.995
     gold_location = set(zip(*np.where(gold_result >= threshold)[::-1]))
     norm_location = set(zip(*np.where(norm_result >= threshold)[::-1]))
 
@@ -37,9 +37,10 @@ def get_farmpos(screenImage: Image):
 def get_playerPos(screenImage: Image):
     # 1. 이미지 로드
     screen = np.array(screenImage)
-    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2RGB)
+    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
     path = 'core/templates/player.png' if __name__ != '__main__' else 'templates/player.png'
     player_templ: np.ndarray = cv2.imread(path)
+    player_templ = cv2.cvtColor(player_templ, cv2.COLOR_BGR2GRAY)
 
     # 2. 템플릿메칭
     player_result: np.ndarray = cv2.matchTemplate(screen, player_templ, cv2.TM_CCOEFF_NORMED)
@@ -56,9 +57,10 @@ def get_playerPos(screenImage: Image):
 def get_waterPos(screenImage: Image):
     # 1. 이미지 로드
     screen = np.array(screenImage)
-    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2RGB)
+    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
     water_path = 'core/templates/water.png' if __name__ != '__main__' else 'templates/water.png'
     water_templ: np.ndarray = cv2.imread(water_path)
+    water_templ = cv2.cvtColor(water_templ, cv2.COLOR_BGR2GRAY)
 
     # 2. 템플릿매칭
     water_result: np.ndarray = cv2.matchTemplate(screen, water_templ, cv2.TM_CCOEFF_NORMED)
@@ -76,9 +78,10 @@ def get_waterPos(screenImage: Image):
 def get_fertPos(screenImage: Image):
     # 1. 이미지 로드
     screen = np.array(screenImage)
-    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2RGB)
+    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
     fert_path = 'core/templates/fertilizer.png' if __name__ != '__main__' else 'templates/fertilizer.png'
     fert_templ: np.ndarray = cv2.imread(fert_path)
+    fert_templ = cv2.cvtColor(fert_templ, cv2.COLOR_BGR2GRAY)
 
     # 2. 템플릿매칭
     fert_result: np.ndarray = cv2.matchTemplate(screen, fert_templ, cv2.TM_CCOEFF_NORMED)
@@ -96,9 +99,10 @@ def get_fertPos(screenImage: Image):
 def get_seedPos(screenImage: Image):
     # 1. 이미지 로드
     screen = np.array(screenImage)
-    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2RGB)
+    screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
     seed_path = 'core/templates/seed.png' if __name__ != '__main__' else 'templates/seed.png'
     seed_templ: np.ndarray = cv2.imread(seed_path)
+    seed_templ = cv2.cvtColor(seed_templ, cv2.COLOR_BGR2GRAY)
 
     # 2. 템플릿매칭
     seed_result: np.ndarray = cv2.matchTemplate(screen, seed_templ, cv2.TM_CCOEFF_NORMED)
