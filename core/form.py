@@ -1,0 +1,146 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'form.ui'
+##
+## Created by: Qt User Interface Compiler version 6.2.3
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QGraphicsView, QGroupBox, QLabel,
+    QPushButton, QRadioButton, QSizePolicy, QSpinBox,
+    QWidget)
+
+class Ui_Widget(object):
+    def setupUi(self, Widget):
+        if not Widget.objectName():
+            Widget.setObjectName(u"Widget")
+        Widget.resize(390, 592)
+        self.groupBox = QGroupBox(Widget)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setGeometry(QRect(10, 10, 371, 341))
+        self.groupBox_2 = QGroupBox(self.groupBox)
+        self.groupBox_2.setObjectName(u"groupBox_2")
+        self.groupBox_2.setGeometry(QRect(10, 20, 351, 211))
+        self.label_5 = QLabel(self.groupBox_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(190, 40, 31, 20))
+        self.label_5.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.graphicsView_waterItem = QGraphicsView(self.groupBox_2)
+        self.graphicsView_waterItem.setObjectName(u"graphicsView_waterItem")
+        self.graphicsView_waterItem.setGeometry(QRect(60, 30, 50, 50))
+        self.graphicsView_seedItem = QGraphicsView(self.groupBox_2)
+        self.graphicsView_seedItem.setObjectName(u"graphicsView_seedItem")
+        self.graphicsView_seedItem.setGeometry(QRect(230, 30, 50, 50))
+        self.label_4 = QLabel(self.groupBox_2)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(20, 100, 31, 20))
+        self.label_4.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.label_3 = QLabel(self.groupBox_2)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(0, 40, 51, 20))
+        self.label_3.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.graphicsView_fertItem = QGraphicsView(self.groupBox_2)
+        self.graphicsView_fertItem.setObjectName(u"graphicsView_fertItem")
+        self.graphicsView_fertItem.setGeometry(QRect(60, 90, 50, 50))
+        self.graphicsView_player = QGraphicsView(self.groupBox_2)
+        self.graphicsView_player.setObjectName(u"graphicsView_player")
+        self.graphicsView_player.setGeometry(QRect(229, 90, 111, 50))
+        self.label_7 = QLabel(self.groupBox_2)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(180, 100, 41, 20))
+        self.label_7.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.label_8 = QLabel(self.groupBox_2)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(181, 160, 41, 20))
+        self.label_8.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.graphicsView_normalland = QGraphicsView(self.groupBox_2)
+        self.graphicsView_normalland.setObjectName(u"graphicsView_normalland")
+        self.graphicsView_normalland.setGeometry(QRect(230, 150, 111, 50))
+        self.graphicsView_goldland = QGraphicsView(self.groupBox_2)
+        self.graphicsView_goldland.setObjectName(u"graphicsView_goldland")
+        self.graphicsView_goldland.setGeometry(QRect(60, 150, 111, 50))
+        self.label_9 = QLabel(self.groupBox_2)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(11, 160, 41, 20))
+        self.label_9.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.groupBox_3 = QGroupBox(self.groupBox)
+        self.groupBox_3.setObjectName(u"groupBox_3")
+        self.groupBox_3.setGeometry(QRect(10, 240, 351, 91))
+        self.label = QLabel(self.groupBox_3)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(10, 30, 61, 21))
+        self.label.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.spinBox_hrvStep = QSpinBox(self.groupBox_3)
+        self.spinBox_hrvStep.setObjectName(u"spinBox_hrvStep")
+        self.spinBox_hrvStep.setGeometry(QRect(80, 30, 42, 22))
+        self.label_2 = QLabel(self.groupBox_3)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(140, 30, 81, 21))
+        self.label_2.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.spinBox_hrvTime = QSpinBox(self.groupBox_3)
+        self.spinBox_hrvTime.setObjectName(u"spinBox_hrvTime")
+        self.spinBox_hrvTime.setGeometry(QRect(230, 30, 61, 22))
+        self.spinBox_hrvTime.setMaximum(9999)
+        self.label_6 = QLabel(self.groupBox_3)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(10, 60, 61, 21))
+        self.label_6.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.radioButton = QRadioButton(self.groupBox_3)
+        self.radioButton.setObjectName(u"radioButton")
+        self.radioButton.setGeometry(QRect(80, 60, 61, 20))
+        self.radioButton_2 = QRadioButton(self.groupBox_3)
+        self.radioButton_2.setObjectName(u"radioButton_2")
+        self.radioButton_2.setGeometry(QRect(160, 60, 61, 20))
+        self.groupBox_4 = QGroupBox(Widget)
+        self.groupBox_4.setObjectName(u"groupBox_4")
+        self.groupBox_4.setGeometry(QRect(10, 360, 371, 71))
+        self.pushButton = QPushButton(self.groupBox_4)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(10, 30, 113, 31))
+        self.pushButton_2 = QPushButton(self.groupBox_4)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(130, 30, 113, 31))
+        self.groupBox_5 = QGroupBox(Widget)
+        self.groupBox_5.setObjectName(u"groupBox_5")
+        self.groupBox_5.setGeometry(QRect(10, 440, 371, 141))
+        self.pushButton_3 = QPushButton(self.groupBox_5)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(10, 30, 113, 32))
+
+        self.retranslateUi(Widget)
+
+        QMetaObject.connectSlotsByName(Widget)
+    # setupUi
+
+    def retranslateUi(self, Widget):
+        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
+        self.groupBox.setTitle(QCoreApplication.translate("Widget", u"1.  \uae30\ubcf8 \uc124\uc815", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("Widget", u"\ub18d\uc0ac \uc790\ub3d9\ud654\uc5d0 \uc0ac\uc6a9\ud560 \uc544\uc774\ud15c\ub4e4\uc758 \uc774\ubbf8\uc9c0\ub97c \uc124\uc815\ud558\uc138\uc694. ", None))
+        self.label_5.setText(QCoreApplication.translate("Widget", u"\uc528\uc557:", None))
+        self.label_4.setText(QCoreApplication.translate("Widget", u"\ube44\ub8cc:", None))
+        self.label_3.setText(QCoreApplication.translate("Widget", u"\ubb3c:", None))
+        self.label_7.setText(QCoreApplication.translate("Widget", u"\uccb4\ub825\ubc14:", None))
+        self.label_8.setText(QCoreApplication.translate("Widget", u"\uc77c\ubc18\ub545:", None))
+        self.label_9.setText(QCoreApplication.translate("Widget", u"\ud669\uae08\ub545:", None))
+        self.groupBox_3.setTitle(QCoreApplication.translate("Widget", u"\uc791\ubb3c\uc758 \uae30\ubcf8 \uc815\ubcf4\ub97c \uc785\ub825\ud558\uc138\uc694.", None))
+        self.label.setText(QCoreApplication.translate("Widget", u"\uc218\ud655 \ub2e8\uacc4:", None))
+        self.label_2.setText(QCoreApplication.translate("Widget", u"\uc218\ud655 \uc2dc\uac04 (\ucd08):", None))
+        self.label_6.setText(QCoreApplication.translate("Widget", u"\uc218\ud655 \ubc29\ubc95:", None))
+        self.radioButton.setText(QCoreApplication.translate("Widget", u"\uace1\uad2d\uc774", None))
+        self.radioButton_2.setText(QCoreApplication.translate("Widget", u"\ubc29\ub9dd\uc774", None))
+        self.groupBox_4.setTitle(QCoreApplication.translate("Widget", u"2.  \ub18d\uc0ac \uc790\ub3d9\ud654 \ucee8\ud2b8\ub864\ub7ec", None))
+        self.pushButton.setText(QCoreApplication.translate("Widget", u"\uc790\ub3d9\ud654 \uc2dc\uc791", None))
+        self.pushButton_2.setText(QCoreApplication.translate("Widget", u"\uc790\ub3d9\ud654 \uc911\uc9c0", None))
+        self.groupBox_5.setTitle(QCoreApplication.translate("Widget", u"3.  \ub514\ubc84\uae45 \uc635\uc158", None))
+        self.pushButton_3.setText(QCoreApplication.translate("Widget", u"PushButton", None))
+    # retranslateUi
+
